@@ -4,6 +4,6 @@ yarn build
 
 cp -v -r build/* ../
 
-git add *
+git add --all
 git commit -m "Publish"
 git push origin master
