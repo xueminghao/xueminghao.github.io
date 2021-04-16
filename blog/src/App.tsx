@@ -39,7 +39,7 @@ class App extends PureComponent<{}, IAppState> {
 
   _loadPosts(): void {
     const octokit = new Octokit({
-      auth: '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',
+      auth: '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',
       userAgent: 'blog client',
       baseUrl: 'https://api.github.com',
   
@@ -64,6 +64,8 @@ class App extends PureComponent<{}, IAppState> {
         })
       }
       console.log(res)
+    }).catch(err => {
+      console.log(err)
     })
   }
 }
