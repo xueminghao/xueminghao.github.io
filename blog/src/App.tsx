@@ -39,10 +39,8 @@ class App extends PureComponent<{}, IAppState> {
 
   _loadPosts(): void {
     const octokit = new Octokit({
-      auth: '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',
       userAgent: 'blog client',
       baseUrl: 'https://api.github.com',
-  
     })
     const owner = 'xueminghao'
     const repo = 'xueminghao.github.io'
