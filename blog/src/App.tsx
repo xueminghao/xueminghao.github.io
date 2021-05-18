@@ -44,9 +44,11 @@ class App extends PureComponent<{}, IAppState> {
     })
     const owner = 'xueminghao'
     const repo = 'xueminghao.github.io'
+    const labels = 'blog'
     octokit.rest.issues.listForRepo({
       owner,
       repo,
+      labels,
     }).then(res => {
       if (res?.data) {
         const posts: Post[] = res.data.map((item) => {
